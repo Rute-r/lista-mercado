@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Lista de Mercado</title>
+  </head>
+  <body>
+    <div class="paperMargin"><div class="paperHole"></div></div>
+
+    <div class="paperSheet">
+      <div class="paperHeader">
+        <div class="paperDate" id="paperDate"></div>
+      </div>
+      <form action="" class="add" id="newItem">
+        <label for="item">Item</label>
+        <input type="text" name="name" id="name" />
+        <label for="item">Quantidade</label>
+        <input type="number" name="amount" id="amount" />
+        <input type="submit" value="+" class="register" />
+      </form>
+      <ul class="list" id="list">
+        <li class="listItem"><i class="fa-solid fa-basket-shopping"></i></li>
+        <li class="listItem">Arroz <strong>1</strong></li>
+      </ul>
+    </div>
+
+    <script src="js/date.js "></script>
+    <script src="js/list.js"></script>
+  </body>
+</html>
