@@ -11,21 +11,21 @@ form.addEventListener('submit', (event) => {
 
   name.value = '';
   amount.value = '';
+
+  document.querySelector('#name').focus();
 });
 
 function createItem(name, amount) {
   if (name !== '' || amount !== '') {
-    const newItem = document.querySelector('.listItem');
-    newItem.classList.remove('emptylist');
+    const newItem = document.createElement('li');
+    newItem.classList.add('.listItem');
 
     const numberItem = document.createElement('strong');
     numberItem.innerHTML = amount;
 
     newItem.appendChild(numberItem);
-    newItem.innerHTML += ' ' + name;
+    newItem.innerHTML += ' - ' + name;
 
     list.appendChild(newItem);
-  } else {
-    newItem = '';
   }
 }
