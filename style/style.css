@@ -113,7 +113,9 @@ input {
   body {
     font-size: 10px;
   }
-  .paperSheet {
+
+  .paperSheet,
+  .stripes-container {
     width: 250px;
     height: 500px;
     padding-right: 15px;
@@ -144,7 +146,7 @@ input {
     width: 50px;
   }
 
-  .emptylist {
+  .stripes {
     padding: 7px;
   }
 }
@@ -153,10 +155,15 @@ input {
   body {
     font-size: 16px;
   }
-  .paperSheet {
+  .paperSheet,
+  .stripes-container {
     width: 325px;
     height: 600px;
     padding-right: 15px;
+  }
+
+  .stripes-container {
+    padding-top: 110px;
   }
 
   .paperMargin {
@@ -184,7 +191,7 @@ input {
     width: 77px;
   }
 
-  .emptylist {
+  .stripes {
     padding: 8.5px;
   }
 }
