@@ -87,3 +87,83 @@ input {
 .emptylist {
   padding: 12px;
 }
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  .paperSheet {
+    width: 250px;
+    height: 500px;
+    padding-right: 15px;
+  }
+
+  .paperMargin {
+    width: 25px;
+    height: 500px;
+  }
+
+  .paperHole {
+    width: 10px;
+    height: 10px;
+    margin: 20px 0 10px 7px;
+    box-shadow: 0 75px 0 #130d06, 0 150px 0 #130d06, 0 225px 0 #130d06, 0 300px 0 #130d06, 0 375px 0 #130d06, 0 450px 0 #130d06, 0 525px 0 #130d06,
+      0 600px 0 #130d06, 0 675px 0 #130d06, 0 750px 0 #130d06;
+  }
+
+  .paperDate {
+    border: 1px solid black;
+    width: 57px;
+    height: 13px;
+    font-size: 10px;
+    margin: 17px 10px 0 0;
+  }
+
+  input {
+    width: 50px;
+  }
+
+  .emptylist {
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .paperSheet {
+    width: 325px;
+    height: 600px;
+    padding-right: 15px;
+  }
+
+  .paperMargin {
+    width: 25px;
+    height: 600px;
+  }
+
+  .paperHole {
+    width: 12px;
+    height: 12px;
+    margin: 20px 0 10px 7px;
+    box-shadow: 0 75px 0 #130d06, 0 150px 0 #130d06, 0 225px 0 #130d06, 0 300px 0 #130d06, 0 375px 0 #130d06, 0 450px 0 #130d06, 0 525px 0 #130d06,
+      0 600px 0 #130d06, 0 675px 0 #130d06, 0 750px 0 #130d06;
+  }
+
+  .paperDate {
+    border: 1px solid black;
+    width: 60px;
+    height: 17px;
+    font-size: 12px;
+    margin: 25px 10px 0 0;
+  }
+
+  input {
+    width: 77px;
+  }
+
+  .emptylist {
+    padding: 8.5px;
+  }
+}

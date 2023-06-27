@@ -4,7 +4,13 @@ const list = document.querySelector('#list');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  createItem(event.target.elements['name'].value, event.target.elements['amount'].value);
+  const name = event.target.elements['name'];
+  const amount = event.target.elements['amount'];
+
+  createItem(name.value, amount.value);
+
+  name.value = '';
+  amount.value = '';
 });
 
 function createItem(name, amount) {
