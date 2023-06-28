@@ -7,7 +7,9 @@ form.addEventListener('submit', (event) => {
   const name = event.target.elements['name'];
   const amount = event.target.elements['amount'];
 
-  createItem(name.value, amount.value);
+  const itemMeasure = event.target.elements['itemMeasure'];
+
+  createItem(name.value, amount.value, itemMeasure.value);
 
   name.value = '';
   amount.value = '';
@@ -15,17 +17,18 @@ form.addEventListener('submit', (event) => {
   document.querySelector('#name').focus();
 });
 
-function createItem(name, amount) {
+function createItem(name, amount, itemMeasure) {
   if (name !== '' || amount !== '') {
     const newItem = document.createElement('li');
     newItem.classList.add('.listItem');
 
     const numberItem = document.createElement('strong');
-    numberItem.innerHTML = amount;
+    numberItem.innerHTML = amount + itemMeasure;
 
     newItem.appendChild(numberItem);
     newItem.innerHTML += ' - ' + name;
 
     list.appendChild(newItem);
   }
+  return;
 }

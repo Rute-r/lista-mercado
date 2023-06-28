@@ -77,6 +77,16 @@ form {
 input {
   background-color: rgb(240, 240, 223);
   border: none;
+  width: 100px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+}
+
+#itemMeasure {
+  background-color: rgb(240, 240, 223);
+  border: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
 }
 /* 
 .list {
@@ -86,7 +96,6 @@ input {
 
 .listItem {
   list-style-type: none;
-  border-bottom: 1px solid lightblue;
   text-align: center;
 }
 
@@ -99,14 +108,12 @@ input {
   flex-direction: column;
   padding-right: 25px;
   z-index: -1;
-  padding-top: 120px;
+  padding-top: 95px;
 }
 
 .stripes {
-  list-style-type: none;
   border-bottom: 1px solid lightblue;
-  text-align: center;
-  padding: 12px;
+  padding: 11.5px;
 }
 
 @media screen and (max-width: 400px) {
@@ -142,12 +149,16 @@ input {
     margin: 17px 10px 0 0;
   }
 
-  input {
+  #name {
     width: 50px;
   }
 
+  #amount {
+    width: 25px;
+  }
+
   .stripes {
-    padding: 7px;
+    padding: 2px;
   }
 }
 
@@ -163,7 +174,7 @@ input {
   }
 
   .stripes-container {
-    padding-top: 110px;
+    padding-top: 92px;
   }
 
   .paperMargin {
@@ -187,11 +198,15 @@ input {
     margin: 25px 10px 0 0;
   }
 
-  input {
-    width: 77px;
+  #name {
+    width: 55px;
+  }
+
+  #amount {
+    width: 25px;
   }
 
   .stripes {
-    padding: 8.5px;
+    padding: 9px;
   }
 }

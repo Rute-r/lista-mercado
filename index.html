@@ -42,6 +42,7 @@
         <div class="stripes"></div>
         <div class="stripes"></div>
         <div class="stripes"></div>
+        <div class="stripes"></div>
       </div>
 
       <div class="paperSheet">
@@ -51,8 +52,16 @@
         <form action="" class="add" id="newItem">
           <label for="item">Item</label>
           <input type="text" name="name" id="name" />
-          <label for="item">Quantidade</label>
+          <label for="item">Quant.</label>
           <input type="number" name="amount" id="amount" />
+          <label for="item">Medida</label>
+          <select name="item" id="itemMeasure">
+            <option value="un">un.</option>
+            <option value="kg">kg</option>
+            <option value="gm">gm</option>
+            <option value="ml">ml</option>
+            <option value="l">l</option>
+          </select>
           <input type="submit" value="+" class="register" />
         </form>
         <ul class="list" id="list">
