@@ -19,7 +19,7 @@ form.addEventListener('submit', (event) => {
 function createItem(name, amount, itemMeasure) {
   if (name !== '' && amount !== '') {
     const newItem = document.createElement('li');
-    newItem.classList.add('.listItem');
+    newItem.classList.add('listItem');
 
     const numberItem = document.createElement('strong');
     numberItem.innerHTML = amount + itemMeasure;
@@ -33,8 +33,9 @@ function createItem(name, amount, itemMeasure) {
   return;
 }
 
-function deleteBtn(id) {
+function deleteBtn() {
   const elementButton = document.createElement('button');
+  elementButton.classList.add('deleteButton');
 
   elementButton.innerText = 'X';
 
