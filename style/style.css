@@ -177,6 +177,10 @@ input {
   .stripes {
     padding: 2px;
   }
+
+  #addButton {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
