@@ -6,7 +6,6 @@ form.addEventListener('submit', (event) => {
 
   const name = event.target.elements['name'];
   const amount = event.target.elements['amount'];
-
   const itemMeasure = event.target.elements['itemMeasure'];
 
   createItem(name.value, amount.value, itemMeasure.value);
@@ -18,7 +17,7 @@ form.addEventListener('submit', (event) => {
 });
 
 function createItem(name, amount, itemMeasure) {
-  if (name !== '' || amount !== '') {
+  if (name !== '' && amount !== '') {
     const newItem = document.createElement('li');
     newItem.classList.add('.listItem');
 
@@ -27,8 +26,25 @@ function createItem(name, amount, itemMeasure) {
 
     newItem.appendChild(numberItem);
     newItem.innerHTML += ' - ' + name;
+    newItem.appendChild(deleteBtn());
 
     list.appendChild(newItem);
   }
   return;
+}
+
+function deleteBtn(id) {
+  const elementButton = document.createElement('button');
+
+  elementButton.innerText = 'X';
+
+  elementButton.addEventListener('click', function () {
+    deleteElement(this.parentNode);
+  });
+
+  return elementButton;
+}
+
+function deleteElement(tag) {
+  tag.remove();
 }
