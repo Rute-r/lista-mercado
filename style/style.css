@@ -134,6 +134,20 @@ input {
   padding: 11.5px;
 }
 
+.error {
+  position: fixed;
+  top: 100px;
+  color: red;
+}
+
+.item-error {
+  display: none;
+}
+
+.amount-error {
+  display: none;
+}
+
 @media screen and (max-width: 400px) {
   body {
     font-size: 10px;

@@ -49,11 +49,16 @@
         <div class="paperHeader">
           <div class="paperDate" id="paperDate"></div>
         </div>
-        <form action="" class="add" id="newItem">
+
+        <form name="form" action="" class="add" id="newItem">
           <label for="item">Item</label>
           <input type="text" name="name" id="name" />
+          <p class="error item-error"></p>
+
           <label for="item">Quant.</label>
           <input type="number" name="amount" id="amount" />
+          <p class="error amount-error"></p>
+
           <label for="item">Medida</label>
           <select name="item" id="itemMeasure">
             <option value="un">un.</option>
